@@ -2,12 +2,12 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const CardGrid = ({ events }) => {
+  const [imageError, setImageError] = useState({});
+
   if (!Array.isArray(events)) {
     console.warn('CardGrid expected an array but got:', events);
     return <p className="text-center text-sky-500 my-20 py-20">No events available.</p>;
   }
-
-  const [imageError, setImageError] = useState({});
 
   const handleImageError = (eventId) => {
     setImageError((prev) => ({ ...prev, [eventId]: true }));
