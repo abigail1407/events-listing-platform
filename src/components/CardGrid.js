@@ -44,7 +44,7 @@ const CardGrid = ({ events }) => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
       {events.map((event) => {
         const imageUrl = imageError[event.id] ? '/no-bg.png' : event.image_url;
         const { label, className } = getCountdownText(event);

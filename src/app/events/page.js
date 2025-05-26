@@ -96,9 +96,9 @@ const EventsListing = () => {
         <meta name="description" content="Search and filter events by date" />
       </Head>
 
-      <main className="flex flex-col h-[100vh] items-center justify-start p-8 pt-8 mt-25">
-        <div className="w-full max-w-8xl rounded-2xl p-6 shadow-md">
-          <div className="my-4 flex justify-end gap-2 flex-wrap">
+      <main className="flex flex-col h-[100vh] w-[98vw] justify-start sm:justify-space-between lg:p-6 pt-8 mt-25 md:p-0 sm:p-0 xsm:p-0">
+        <div className="w-full max-w-10xl rounded-2xl p-4 shadow-md sm:p-0 md:p-0">
+          <div className="my-4 flex justify-end sm:justify-space-between gap-2 flex-wrap sm:m-0">
             <DropdownSearch onFilterChange={handleSearchChange} />
             <DatePicker selectedDate={selectedDate} onDateChange={setSelectedDate} />
             <button

@@ -17,7 +17,7 @@ const Home = () => {
         <meta name="description" content="Search and filter events by date" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center min-h-[95vh] p-4 sm:p-6 md:p-8">
+      <main className="flex flex-col items-center justify-center background-none p-4 sm:p-6 md:p-8">
         <div className="w-full max-w-6xl rounded-2xl p-4 sm:p-6 shadow-md">
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold italic my-4 sm:my-6 md:my-8">
             Find Events That Inspire You

@@ -31,12 +31,12 @@ export default function Header() {
             alt="Logo"
             width={100}
             height={100}
-            className="absolute w-auto h-25 left-10 top-4"
+            className="absolute w-auto h-25 sm:left-6 left-8 top-4"
             priority
             quality={100}
           />
         </Link>
-        <div className="flex absolute w-auto top-10 h-20 right-28 flex-col gap-0 items-right xs:flex-row sm:gap-1 text-base sm:text-2xl bg-gradient-to-r from-[#F692D9] to-[#0196FF] bg-clip-text text-transparent">
+        <div className="hidden sm:flex absolute w-auto top-10 h-20 right-26 flex-col gap-0 items-end text-base sm:text-2xl bg-gradient-to-r from-[#F692D9] to-[#0196FF] bg-clip-text text-transparent">
           {formattedDate}
         </div>
         <Image
@@ -44,7 +44,7 @@ export default function Header() {
             alt="Logo"
             width={100}
             height={100}
-            className="absolute w-auto top-6 h-15 right-10"
+            className="absolute w-auto top-7 h-15 right-10 sm:right-4"
             priority
             quality={100}
           />

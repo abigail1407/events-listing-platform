@@ -20,8 +20,8 @@ const CheckEvents = ({ onFilterChange, currentFilter }) => {
   };
 
   return (
-    <div className="mb-6">
-      <nav className="flex flex-wrap justify-start sm:justify-start items-center gap-x-2 gap-y-1 sm:gap-x-6">
+    <div className="mb-6 ">
+      <nav className="flex pt-4 flex-wrap justify-start md:justify-space-between items-center gap-x-2 gap-y-1 sm:gap-x-2 sm:gap-y-2">
         {['all', 'ongoing', 'upcoming', 'expired'].map((type) => (
           <button
             key={type}
@@ -34,7 +34,7 @@ const CheckEvents = ({ onFilterChange, currentFilter }) => {
         ))}
       </nav>
 
-      <div className="mt-4 sm:mt-6 text-left bg-gradient-to-r from-[#FF1E56] to-[#0196FF] text-transparent bg-clip-text font-extrabold text-2xl sm:text-4xl italic">
+      <div className="mt-4 sm:mt-6 text-left bg-gradient-to-r from-[#FF1E56] to-[#0196FF] text-transparent bg-clip-text font-extrabold text-2xl sm:text-4xl italic lg:py-6">
         {labels[currentFilter]}
       </div>
     </div>

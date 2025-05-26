@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={footerStyle}>
+    <footer style={footerStyle} className="flex-col items-center justify-center md:h-100% hidden lg:nope">
       <p>© {new Date().getFullYear()} Abigail Morales * Events Listing Platform. All rights reserved.</p>
     </footer>
   )
